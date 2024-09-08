@@ -304,3 +304,18 @@ a {
 .linkedin{
     max-width:5%;
 }
+
+.neon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style for the neon image */
+  .neon-image {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(151, 197, 197, 0.8), /* Neon light effect */
+                0 0 30px rgba(192, 201, 201, 0.6),
+                0 0 40px rgba(109, 116, 116, 0.4);
+  }
