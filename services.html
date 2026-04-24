@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — ABTS Technologies</title>
+  <link rel="stylesheet" href="CSS/index.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav-brand"><img src="images/ABTSlogoshort.png" alt="ABTS" class="logo"/><span class="nav-brand-text">ABTS <span>Tech</span></span></div>
+      <button class="menu-icon" onclick="toggleMenu()">[&equiv;]</button>
+      <nav><ul id="nav-list">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="internships.html">Internships</a></li><li><a href="services.html" class="active">Services</a></li>
+        <li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">~/home</a> <span>/</span> services.html</div>
+      <h1>Our <span style="color:var(--blue2)">Services</span></h1>
+      <p>Technology services built and delivered by practitioners — the same skills we teach, applied to real problems.</p>
+    </div>
+  </div>
+
+  <section class="services">
+    <div class="container">
+
+      <div class="code-block" style="margin-bottom:3rem;">
+        <div class="code-block-header">
+          <span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span>
+          <span class="code-block-title">services.manifest</span>
+        </div>
+        <pre><span class="code-comment">// ABTS Technologies :: Service Stack</span>
+<span class="code-key">const</span> services = {
+  <span class="code-key">web_dev</span>:     { stack: [<span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>, <span class="code-str">"JS"</span>, <span class="code-str">"React"</span>, <span class="code-str">"PHP"</span>, <span class="code-str">"SQL"</span>], status: <span class="code-str">"ACTIVE"</span> },
+  <span class="code-key">iot</span>:         { stack: [<span class="code-str">"C++"</span>, <span class="code-str">"Sensors"</span>, <span class="code-str">"Embedded"</span>, <span class="code-str">"IoT-HW"</span>],  status: <span class="code-str">"ACTIVE"</span> },
+  <span class="code-key">ml</span>:          { stack: [<span class="code-str">"Python"</span>, <span class="code-str">"sklearn"</span>, <span class="code-str">"TensorFlow"</span>],          status: <span class="code-str">"ACTIVE"</span> },
+  <span class="code-key">seo</span>:         { stack: [<span class="code-str">"Audit"</span>, <span class="code-str">"Keywords"</span>, <span class="code-str">"On-Page"</span>, <span class="code-str">"Reports"</span>],  status: <span class="code-str">"ACTIVE"</span> }
+};</pre>
+      </div>
+
+      <div class="cards-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>We build responsive, user-friendly full-stack websites. From simple landing pages to complex web apps — designed, coded, and deployed.</p>
+          <ul class="check-list" style="margin-top:1.25rem;">
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>HTML, CSS, JavaScript, React.js</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>PHP backend &amp; SQL databases</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Production deployment &amp; hosting</li>
+          </ul>
+          <span class="card-tag">full-stack</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔌</div>
+          <h3>IoT Solutions</h3>
+          <p>Industry-grade IoT machines designed and built to solve real operational challenges. Hardware meets software in systems that actually work.</p>
+          <ul class="check-list" style="margin-top:1.25rem;">
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Custom IoT hardware design</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Embedded C++ programming</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Sensor integration &amp; automation</li>
+          </ul>
+          <span class="card-tag">hardware+software</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>Machine Learning</h3>
+          <p>End-to-end ML projects at industry level — data pipelines, model training, evaluation, and deployment in production.</p>
+          <ul class="check-list" style="margin-top:1.25rem;">
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Data processing &amp; pipelines</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Classification &amp; forecasting models</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Python, scikit-learn, TensorFlow</li>
+          </ul>
+          <span class="card-tag">ai/ml</span>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔍</div>
+          <h3>SEO Services</h3>
+          <p>Technical SEO to improve your website's visibility on search engines, drive organic traffic, and build long-term online presence.</p>
+          <ul class="check-list" style="margin-top:1.25rem;">
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Keyword research &amp; strategy</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Technical SEO audit &amp; fixes</li>
+            <li><span class="check-icon"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,2.5"/></svg></span>Performance &amp; ranking reports</li>
+          </ul>
+          <span class="card-tag">growth</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Need These Services?</h2>
+      <p>Get in touch to discuss your project — we'd love to build something together.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn">$ contact --us</a>
+        <a href="projects.html" class="btn-outline">$ view --projects</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="social-strip">
+    <p>// connect</p>
+    <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank" class="social-btn"><img src="images/linkedin.png" alt="LinkedIn"/> LinkedIn</a>
+    <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank" class="social-btn"><img src="images/facebook.png" alt="Facebook"/> Facebook</a>
+    <a href="https://x.com/ABTS_Tech_2024" target="_blank" class="social-btn"><img src="images/X_logo_PNG_(2).png" alt="X"/> X_Twitter</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand"><img src="images/ABTSlogoshort.png" alt="ABTS"/><span class="footer-brand-name">ABTS Technologies</span></div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"/></a>
+        <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
+        <a href="https://x.com/ABTS_Tech_2024" target="_blank"><img src="images/X_logo_PNG_(2).png" alt="X"/></a>
+      </div>
+      <span class="footer-copy">© 2024 ABTS_TECHNOLOGIES. ALL_RIGHTS_RESERVED.</span>
+      <div class="footer-links"><a href="contact.html">contact.html</a><a href="privacy.html">privacy.html</a></div>
+    </div>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('nav-list').classList.toggle('showing');}</script>
+</body>
+</html>

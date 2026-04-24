@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers — ABTS Technologies</title>
+  <link rel="stylesheet" href="CSS/index.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav-brand"><img src="images/ABTSlogoshort.png" alt="ABTS" class="logo"/><span class="nav-brand-text">ABTS <span>Tech</span></span></div>
+      <button class="menu-icon" onclick="toggleMenu()">[&equiv;]</button>
+      <nav><ul id="nav-list">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="internships.html">Internships</a></li><li><a href="services.html">Services</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li><li><a href="contact.html">Contact Us</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">~/home</a> <span>/</span> careers.html</div>
+      <h1>Join Our <span style="color:var(--blue2)">Team</span></h1>
+      <p>We're looking for builders — people who love writing code, solving problems, and growing alongside others.</p>
+    </div>
+  </div>
+
+  <section class="careers">
+    <div class="container">
+
+      <div class="code-block" style="margin-bottom:3rem;">
+        <div class="code-block-header">
+          <span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span>
+          <span class="code-block-title">openings.json</span>
+        </div>
+        <pre><span class="code-comment">// ABTS Technologies — Open Positions</span>
+{
+  <span class="code-key">"web_developer"</span>:     { <span class="code-key">"status"</span>: <span class="code-str">"OPEN"</span>, <span class="code-key">"type"</span>: <span class="code-str">"full-stack"</span> },
+  <span class="code-key">"iot_developer"</span>:     { <span class="code-key">"status"</span>: <span class="code-str">"OPEN"</span>, <span class="code-key">"type"</span>: <span class="code-str">"embedded"</span>  },
+  <span class="code-key">"ml_developer"</span>:      { <span class="code-key">"status"</span>: <span class="code-str">"OPEN"</span>, <span class="code-key">"type"</span>: <span class="code-str">"ai/ml"</span>     }
+}</pre>
+      </div>
+
+      <span class="section-label">open_positions[]</span>
+      <h2 class="section-title" style="margin-bottom:0.5rem;">Current Openings</h2>
+      <div class="section-divider"></div>
+
+      <div class="job">
+        <div class="job-header"><h3>Web Developer</h3><span class="job-badge">status: OPEN</span></div>
+        <p>Build and maintain full-stack web applications for real clients. You'll work across frontend and backend, from initial design to production deployment.</p>
+        <p style="font-family:var(--font-mono);font-size:10px;color:var(--dim);margin-bottom:0.75rem;letter-spacing:2px;text-transform:uppercase;">// required skills</p>
+        <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL</li><li>PHP</li><li>React.js</li></ul>
+        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn" style="font-size:13px;padding:9px 20px;">$ apply --role=web_dev</a></div>
+      </div>
+
+      <div class="job">
+        <div class="job-header"><h3>IoT Developer</h3><span class="job-badge">status: OPEN</span></div>
+        <p>Design and program IoT hardware and software systems for industry applications. Concept to deployment on real connected devices.</p>
+        <p style="font-family:var(--font-mono);font-size:10px;color:var(--dim);margin-bottom:0.75rem;letter-spacing:2px;text-transform:uppercase;">// required skills</p>
+        <ul><li>C++</li><li>Embedded Systems</li><li>Sensor Integration</li><li>IoT Hardware</li></ul>
+        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn" style="font-size:13px;padding:9px 20px;">$ apply --role=iot_dev</a></div>
+      </div>
+
+      <div class="job">
+        <div class="job-header"><h3>Machine Learning Developer</h3><span class="job-badge">status: OPEN</span></div>
+        <p>Work on end-to-end ML projects — data collection, preprocessing, model training, evaluation, and production deployment.</p>
+        <p style="font-family:var(--font-mono);font-size:10px;color:var(--dim);margin-bottom:0.75rem;letter-spacing:2px;text-transform:uppercase;">// required skills</p>
+        <ul><li>Python</li><li>Machine Learning</li><li>Data Processing</li><li>scikit-learn / TF</li></ul>
+        <div style="margin-top:1.5rem;"><a href="contact.html" class="btn" style="font-size:13px;padding:9px 20px;">$ apply --role=ml_dev</a></div>
+      </div>
+
+      <div style="margin-top:4rem;">
+        <span class="section-label">why_join.md</span>
+        <h2 class="section-title" style="margin-bottom:0.5rem;">Why Work With Us</h2>
+        <div class="section-divider"></div>
+        <div class="cards-grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="card">
+            <div class="card-icon">📈</div>
+            <h3>Growth</h3>
+            <p>Continuous learning, skill development, and advancement in a fast-moving tech environment.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🛠️</div>
+            <h3>Real Work</h3>
+            <p>You build real things — not toy projects. Production code, real clients, real deployments.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📢</div>
+            <h3>Placement Network</h3>
+            <p>We share placement drive info and actively help our team connect with industry opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Deploy?</h2>
+      <p>Send your resume to <span style="color:var(--cyan);font-family:var(--font-mono);font-size:14px;">abtstech2024@gmail.com</span> or fill out the contact form.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn">$ apply --now</a>
+        <a href="about.html" class="btn-outline">$ learn --about-us</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="social-strip">
+    <p>// connect</p>
+    <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank" class="social-btn"><img src="images/linkedin.png" alt="LinkedIn"/> LinkedIn</a>
+    <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank" class="social-btn"><img src="images/facebook.png" alt="Facebook"/> Facebook</a>
+    <a href="https://x.com/ABTS_Tech_2024" target="_blank" class="social-btn"><img src="images/X_logo_PNG_(2).png" alt="X"/> X_Twitter</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand"><img src="images/ABTSlogoshort.png" alt="ABTS"/><span class="footer-brand-name">ABTS Technologies</span></div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"/></a>
+        <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
+        <a href="https://x.com/ABTS_Tech_2024" target="_blank"><img src="images/X_logo_PNG_(2).png" alt="X"/></a>
+      </div>
+      <span class="footer-copy">© 2024 ABTS_TECHNOLOGIES. ALL_RIGHTS_RESERVED.</span>
+      <div class="footer-links"><a href="contact.html">contact.html</a><a href="privacy.html">privacy.html</a></div>
+    </div>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('nav-list').classList.toggle('showing');}</script>
+</body>
+</html>

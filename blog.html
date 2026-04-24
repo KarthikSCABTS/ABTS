@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — ABTS Technologies</title>
+  <link rel="stylesheet" href="CSS/index.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav-brand"><img src="images/ABTSlogoshort.png" alt="ABTS" class="logo"/><span class="nav-brand-text">ABTS <span>Tech</span></span></div>
+      <button class="menu-icon" onclick="toggleMenu()">[&equiv;]</button>
+      <nav><ul id="nav-list">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="internships.html">Internships</a></li><li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">~/home</a> <span>/</span> blog.html</div>
+      <h1>ABTS <span style="color:var(--blue2)">Blog</span></h1>
+      <p>Industry insights, tech trends, company news, and articles from our team of builders.</p>
+    </div>
+  </div>
+
+  <section class="blog">
+    <div class="container">
+
+      <div class="code-block" style="margin-bottom:3rem;">
+        <div class="code-block-header">
+          <span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span>
+          <span class="code-block-title">blog.feed</span>
+        </div>
+        <pre><span class="code-comment">// ABTS Blog — Content pipeline</span>
+<span class="code-key">status</span>: <span class="code-str">"INITIALIZING"</span>
+<span class="code-key">posts_queued</span>: <span class="code-num">2</span>
+<span class="code-key">topics</span>: [<span class="code-str">"tech"</span>, <span class="code-str">"dev-tips"</span>, <span class="code-str">"internship"</span>, <span class="code-str">"careers"</span>]
+<span class="code-comment">// First posts publishing soon...</span></pre>
+      </div>
+
+      <article>
+        <span class="card-tag" style="margin-bottom:0.75rem;display:inline-block;">coming_soon</span>
+        <h2>Blog Post Title</h2>
+        <p class="meta">DATE_PENDING | AUTHOR_PENDING</p>
+        <p>Our team is preparing our first articles — covering topics like full-stack development tips, IoT projects, ML fundamentals, and advice for developers starting out in Bengaluru's tech scene.</p>
+      </article>
+
+      <article>
+        <span class="card-tag" style="margin-bottom:0.75rem;display:inline-block;">coming_soon</span>
+        <h2>Another Post Title</h2>
+        <p class="meta">DATE_PENDING | AUTHOR_PENDING</p>
+        <p>More content is on the way — from internship experiences and career guides to deep-dives on machine learning and IoT engineering. Watch this space.</p>
+      </article>
+
+      <div style="text-align:center;margin-top:3rem;padding:3rem 2rem;background:var(--panel);border:1px dashed var(--border2);border-radius:var(--r2);">
+        <p style="font-family:var(--font-mono);font-size:13px;color:var(--blue2);margin-bottom:0.5rem;">// NOTIFICATION_SYSTEM</p>
+        <h3 style="font-family:var(--font-display);font-size:22px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--white);margin-bottom:0.5rem;">Follow to Stay Updated</h3>
+        <p style="font-family:var(--font-tech);font-size:14px;color:var(--muted);max-width:400px;margin:0 auto 1.5rem;">Subscribe to our LinkedIn and X channels — we'll post there as soon as new content goes live.</p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank" rel="noopener" class="social-btn"><img src="images/linkedin.png" alt="LinkedIn"/> Follow on LinkedIn</a>
+          <a href="https://x.com/ABTS_Tech_2024" target="_blank" rel="noopener" class="social-btn"><img src="images/X_logo_PNG_(2).png" alt="X"/> Follow on X</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand"><img src="images/ABTSlogoshort.png" alt="ABTS"/><span class="footer-brand-name">ABTS Technologies</span></div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"/></a>
+        <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
+        <a href="https://x.com/ABTS_Tech_2024" target="_blank"><img src="images/X_logo_PNG_(2).png" alt="X"/></a>
+      </div>
+      <span class="footer-copy">© 2024 ABTS_TECHNOLOGIES. ALL_RIGHTS_RESERVED.</span>
+      <div class="footer-links"><a href="contact.html">contact.html</a><a href="privacy.html">privacy.html</a></div>
+    </div>
+  </footer>
+  <script>function toggleMenu(){document.getElementById('nav-list').classList.toggle('showing');}</script>
+</body>
+</html>
