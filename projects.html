@@ -1,120 +1,646 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects — ABTS Technologies</title>
   <link rel="stylesheet" href="CSS/index.css"/>
 </head>
+
 <body>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+
   <header>
     <div class="container">
-      <div class="nav-brand"><img src="images/ABTSlogoshort.png" alt="ABTS" class="logo"/><span class="nav-brand-text">ABTS <span>Tech</span></span></div>
-      <button class="menu-icon" onclick="toggleMenu()">[&equiv;]</button>
-      <nav><ul id="nav-list">
-        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
-        <li><a href="internships.html">Internships</a></li><li><a href="services.html">Services</a></li>
-        <li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li>
-      </ul></nav>
-    </div>
+
+```
+  <div class="nav-brand">
+    <img src="images/ABTSlogoshort.png" alt="ABTS" class="logo"/>
+    <span class="nav-brand-text">
+      ABTS <span>Tech</span>
+    </span>
+  </div>
+
+  <button class="menu-icon" onclick="toggleMenu()">[&equiv;]</button>
+
+  <nav>
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="internships.html">Internships</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+</div>
+```
+
   </header>
+
+  <!-- =========================
+       PAGE HERO
+  ========================== -->
 
   <div class="page-hero">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">~/home</a> <span>/</span> projects.html</div>
-      <h1>Our <span style="color:var(--blue2)">Projects</span></h1>
-      <p>A portfolio of real-world builds — web, IoT, and machine learning. All deployed. All functional.</p>
-    </div>
+
+```
+  <div class="breadcrumb">
+    <a href="index.html">~/home</a>
+    <span>/</span>
+    projects.html
   </div>
+
+  <h1>
+    Our <span style="color:var(--blue2)">Projects</span>
+  </h1>
+
+  <p>
+    A portfolio of real-world builds — web, desktop software, IoT,
+    and machine learning. All built by ABTS Technologies.
+  </p>
+
+</div>
+```
+
+  </div>
+
+  <!-- =========================
+       PROJECTS
+  ========================== -->
 
   <section class="projects">
-    <div class="container">
 
-      <div class="code-block" style="margin-bottom:3rem;">
-        <div class="code-block-header">
-          <span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span>
-          <span class="code-block-title">portfolio.manifest</span>
-        </div>
-        <pre><span class="code-comment">// ABTS Project Portfolio</span>
+```
+<div class="container">
+
+
+  <!-- =========================
+       PROJECT MANIFEST
+  ========================== -->
+  <div class="code-block" style="margin-bottom:3rem;">
+
+    <div class="code-block-header">
+      <span class="code-dot red"></span>
+      <span class="code-dot yellow"></span>
+      <span class="code-dot green"></span>
+
+      <span class="code-block-title">
+        portfolio.manifest
+      </span>
+    </div>
+
+    <pre><span class="code-comment">// ABTS Project Portfolio</span>
+```
+
 [
-  { <span class="code-key">id</span>: <span class="code-num">01</span>, <span class="code-key">type</span>: <span class="code-str">"web"</span>,     <span class="code-key">name</span>: <span class="code-str">"Sarvothomukha School"</span>,    <span class="code-key">status</span>: <span class="code-str">"LIVE"</span> },
-  { <span class="code-key">id</span>: <span class="code-num">02</span>, <span class="code-key">type</span>: <span class="code-str">"ml"</span>,      <span class="code-key">name</span>: <span class="code-str">"Product Demand Forecasting"</span>, <span class="code-key">status</span>: <span class="code-str">"COMPLETE"</span> },
-  { <span class="code-key">id</span>: <span class="code-num">03</span>, <span class="code-key">type</span>: <span class="code-str">"iot"</span>,     <span class="code-key">name</span>: <span class="code-str">"Surveillance Bot"</span>,          <span class="code-key">status</span>: <span class="code-str">"COMPLETE"</span> },
-  { <span class="code-key">id</span>: <span class="code-num">04</span>, <span class="code-key">type</span>: <span class="code-str">"..."</span>,     <span class="code-key">name</span>: <span class="code-str">"More in Development"</span>,      <span class="code-key">status</span>: <span class="code-str">"IN_PROGRESS"</span> }
+{ <span class="code-key">id</span>: <span class="code-num">01</span>, <span class="code-key">type</span>: <span class="code-str">"web"</span>,            <span class="code-key">name</span>: <span class="code-str">"Sarvothomukha School"</span>,      <span class="code-key">status</span>: <span class="code-str">"LIVE"</span> },
+{ <span class="code-key">id</span>: <span class="code-num">02</span>, <span class="code-key">type</span>: <span class="code-str">"ml"</span>,             <span class="code-key">name</span>: <span class="code-str">"Product Demand Forecasting"</span>, <span class="code-key">status</span>: <span class="code-str">"COMPLETE"</span> },
+{ <span class="code-key">id</span>: <span class="code-num">03</span>, <span class="code-key">type</span>: <span class="code-str">"iot"</span>,            <span class="code-key">name</span>: <span class="code-str">"Surveillance Bot"</span>,            <span class="code-key">status</span>: <span class="code-str">"COMPLETE"</span> },
+{ <span class="code-key">id</span>: <span class="code-num">04</span>, <span class="code-key">type</span>: <span class="code-str">"desktop_audio"</span>, <span class="code-key">name</span>: <span class="code-str">"ALL Speakers Studio"</span>,        <span class="code-key">status</span>: <span class="code-str">"RELEASED"</span> },
+{ <span class="code-key">id</span>: <span class="code-num">05</span>, <span class="code-key">type</span>: <span class="code-str">"..."</span>,            <span class="code-key">name</span>: <span class="code-str">"More in Development"</span>,         <span class="code-key">status</span>: <span class="code-str">"IN_PROGRESS"</span> }
 ]</pre>
-      </div>
 
-      <div class="project">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:0.75rem;">
-          <div>
-            <span class="card-tag" style="margin:0 0 0.5rem;display:inline-block;">web_dev</span>
-            <h3>Sarvothomukha International Public School</h3>
-          </div>
-          <a href="https://sarvothomukha.github.io./sips/index.html" target="_blank" rel="noopener" class="btn-outline" style="font-size:12px;padding:8px 18px;font-family:var(--font-mono);">$ open --live-site ↗</a>
-        </div>
-        <p>A complete school website built for Sarvothomukha International Public School — displaying school info, programmes, and contact details. Designed, built, and deployed by the ABTS team as a real client project.</p>
-      </div>
-
-      <div class="project">
-        <div style="margin-bottom:0.75rem;">
-          <span class="card-tag" style="margin:0 0 0.5rem;display:inline-block;">machine_learning</span>
-          <h3>Product Demand Forecasting</h3>
-        </div>
-        <p>An ML pipeline using a Naïve Bayes classifier to process product demand data and predict profit percentages. Built from raw data through preprocessing, model training, evaluation, and output — fully end-to-end.</p>
-        <p style="font-family:var(--font-mono);font-size:11px;color:var(--dim);margin-top:0.75rem;">// stack: Python · Naive Bayes · scikit-learn · pandas</p>
-      </div>
-
-      <div class="project">
-        <div style="margin-bottom:0.75rem;">
-          <span class="card-tag" style="margin:0 0 0.5rem;display:inline-block;">iot_robotics</span>
-          <h3>Surveillance Bot</h3>
-        </div>
-        <p>A human-controlled surveillance robot operated remotely over the internet, streaming a live video feed to the user via an onboard camera. Built for real-time remote monitoring and reconnaissance applications.</p>
-        <p style="font-family:var(--font-mono);font-size:11px;color:var(--dim);margin-top:0.75rem;">// stack: C++ · Embedded · Camera Module · WebSockets · Remote Control</p>
-      </div>
-
-      <div class="project" style="border-style:dashed;opacity:0.6;">
-        <div style="display:flex;align-items:center;gap:14px;">
-          <div class="card-icon" style="flex-shrink:0;animation:pulse 2s ease infinite;">⚙️</div>
-          <div>
-            <h3 style="font-size:14px;letter-spacing:1px;">MORE_PROJECTS :: IN_DEVELOPMENT</h3>
-            <p style="font-family:var(--font-mono);font-size:11px;margin:4px 0 0;color:var(--dim);">// Watch this space — new builds coming soon</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <h2>Want to Build Like This?</h2>
-      <p>Apply for an internship and join the team building real-world technology projects.</p>
-      <div class="cta-actions">
-        <a href="internships.html" class="btn">$ apply --internship</a>
-        <a href="services.html" class="btn-outline">$ view --services</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="social-strip">
-    <p>// connect</p>
-    <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank" class="social-btn"><img src="images/linkedin.png" alt="LinkedIn"/> LinkedIn</a>
-    <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank" class="social-btn"><img src="images/facebook.png" alt="Facebook"/> Facebook</a>
-    <a href="https://x.com/ABTS_Tech_2024" target="_blank" class="social-btn"><img src="images/X_logo_PNG_(2).png" alt="X"/> X_Twitter</a>
+```
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-brand"><img src="images/ABTSlogoshort.png" alt="ABTS"/><span class="footer-brand-name">ABTS Technologies</span></div>
-      <div class="footer-socials">
-        <a href="https://www.linkedin.com/company/abts-technologies/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"/></a>
-        <a href="https://www.facebook.com/profile.php?id=61565416333237" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
-        <a href="https://x.com/ABTS_Tech_2024" target="_blank"><img src="images/X_logo_PNG_(2).png" alt="X"/></a>
+
+  <!-- =========================
+       PROJECT 01
+  ========================== -->
+  <div class="project">
+
+    <div style="
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      flex-wrap:wrap;
+      margin-bottom:0.75rem;
+    ">
+
+      <div>
+
+        <span
+          class="card-tag"
+          style="margin:0 0 0.5rem;display:inline-block;"
+        >
+          web_dev
+        </span>
+
+        <h3>
+          Sarvothomukha International Public School
+        </h3>
+
       </div>
-      <span class="footer-copy">© 2024 ABTS_TECHNOLOGIES. ALL_RIGHTS_RESERVED.</span>
-      <div class="footer-links"><a href="contact.html">contact.html</a><a href="privacy.html">privacy.html</a></div>
+
+      <a
+        href="https://sarvothomukha.github.io./sips/index.html"
+        target="_blank"
+        rel="noopener"
+        class="btn-outline"
+        style="
+          font-size:12px;
+          padding:8px 18px;
+          font-family:var(--font-mono);
+        "
+      >
+        $ open --live-site ↗
+      </a>
+
     </div>
+
+    <p>
+      A complete school website built for Sarvothomukha International
+      Public School — displaying school information, programmes,
+      facilities, and contact details. Designed, developed, and
+      deployed by the ABTS team as a real-world client project.
+    </p>
+
+    <p style="
+      font-family:var(--font-mono);
+      font-size:11px;
+      color:var(--dim);
+      margin-top:0.75rem;
+    ">
+      // stack: HTML · CSS · JavaScript · GitHub Pages
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       PROJECT 02
+  ========================== -->
+  <div class="project">
+
+    <div style="margin-bottom:0.75rem;">
+
+      <span
+        class="card-tag"
+        style="margin:0 0 0.5rem;display:inline-block;"
+      >
+        machine_learning
+      </span>
+
+      <h3>
+        Product Demand Forecasting
+      </h3>
+
+    </div>
+
+    <p>
+      An end-to-end machine learning pipeline developed to process
+      product demand data and predict profit percentages. The project
+      covers data preprocessing, model training, prediction,
+      evaluation, and result generation from raw input data.
+    </p>
+
+    <p style="
+      font-family:var(--font-mono);
+      font-size:11px;
+      color:var(--dim);
+      margin-top:0.75rem;
+    ">
+      // stack: Python · Naive Bayes · scikit-learn · pandas
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       PROJECT 03
+  ========================== -->
+  <div class="project">
+
+    <div style="margin-bottom:0.75rem;">
+
+      <span
+        class="card-tag"
+        style="margin:0 0 0.5rem;display:inline-block;"
+      >
+        iot_robotics
+      </span>
+
+      <h3>
+        Surveillance Bot
+      </h3>
+
+    </div>
+
+    <p>
+      A remotely controlled surveillance robot designed for real-time
+      monitoring over the internet. The system provides remote
+      movement control together with a live camera feed, enabling
+      users to monitor an environment from a distance.
+    </p>
+
+    <p style="
+      font-family:var(--font-mono);
+      font-size:11px;
+      color:var(--dim);
+      margin-top:0.75rem;
+    ">
+      // stack: C++ · Embedded Systems · Camera Module · WebSockets · Remote Control
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       PROJECT 04 — ALL SPEAKERS STUDIO
+  ========================== -->
+  <div class="project">
+
+    <div style="
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      flex-wrap:wrap;
+      margin-bottom:0.75rem;
+    ">
+
+      <div>
+
+        <span
+          class="card-tag"
+          style="margin:0 0 0.5rem;display:inline-block;"
+        >
+          desktop_audio_software
+        </span>
+
+        <h3>
+          ALL Speakers Studio
+        </h3>
+
+      </div>
+
+      <a
+        href="https://drive.google.com/file/d/1vpLunMIfjlR_Gt3-en_tHwqmTtQESiar/view?usp=drive_link"
+        target="_blank"
+        rel="noopener"
+        class="btn-outline"
+        style="
+          font-size:12px;
+          padding:8px 18px;
+          font-family:var(--font-mono);
+        "
+      >
+        $ download --app ↗
+      </a>
+
+    </div>
+
+
+    <p>
+      <strong>ALL Speakers Studio</strong> is a Windows-based
+      real-time multi-device audio broadcasting application developed
+      by ABTS Technologies. It allows users to broadcast computer
+      audio simultaneously to multiple connected audio output devices,
+      including internal speakers, Bluetooth speakers and TWS earbuds,
+      wired headphones, USB audio devices, soundbars, and
+      HDMI/DisplayPort audio outputs.
+    </p>
+
+    <p>
+      The application automatically discovers connected audio devices
+      and provides individual speaker selection, master volume control,
+      individual volume adjustment, one-click master mute, device
+      rescanning, and automatic hot-plug detection. Users can also
+      configure synchronization offsets to compensate for the inherent
+      latency of Bluetooth audio devices.
+    </p>
+
+    <p>
+      ALL Speakers Studio uses Windows native audio routing technology
+      and is designed to operate without requiring third-party virtual
+      audio cables, external drivers, or additional plugins. It also
+      supports both a standard Windows installation and a portable
+      execution mode.
+    </p>
+
+
+    <!-- FEATURE LIST -->
+
+    <div style="
+      margin-top:1rem;
+      padding:1rem;
+      border:1px solid rgba(255,255,255,0.08);
+      background:rgba(255,255,255,0.02);
+      font-family:var(--font-mono);
+      font-size:11px;
+      line-height:1.8;
+    ">
+
+      <div style="color:var(--blue2);margin-bottom:5px;">
+        // key_features
+      </div>
+
+      <div>
+        ✓ Real-Time Multi-Device Audio Broadcasting
+      </div>
+
+      <div>
+        ✓ Automatic Windows Audio Device Discovery
+      </div>
+
+      <div>
+        ✓ Bluetooth, Wired, USB & HDMI Audio Support
+      </div>
+
+      <div>
+        ✓ Master & Individual Speaker Volume Control
+      </div>
+
+      <div>
+        ✓ One-Click Master Mute
+      </div>
+
+      <div>
+        ✓ Bluetooth Latency / Sync Offset Calibration
+      </div>
+
+      <div>
+        ✓ Automatic Device Hot-Plug Detection
+      </div>
+
+      <div>
+        ✓ Manual Audio Device Rescan
+      </div>
+
+      <div>
+        ✓ Portable & Standard Installation Modes
+      </div>
+
+      <div>
+        ✓ No Virtual Audio Cable Required
+      </div>
+
+    </div>
+
+
+    <p style="
+      font-family:var(--font-mono);
+      font-size:11px;
+      color:var(--dim);
+      margin-top:0.75rem;
+    ">
+      // stack: Windows · WASAPI · Real-Time Audio Processing · Multi-Device Audio Routing
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       PROJECT 05 — DEVELOPMENT
+  ========================== -->
+  <div
+    class="project"
+    style="
+      border-style:dashed;
+      opacity:0.6;
+    "
+  >
+
+    <div style="
+      display:flex;
+      align-items:center;
+      gap:14px;
+    ">
+
+      <div
+        class="card-icon"
+        style="
+          flex-shrink:0;
+          animation:pulse 2s ease infinite;
+        "
+      >
+        ⚙️
+      </div>
+
+      <div>
+
+        <h3 style="
+          font-size:14px;
+          letter-spacing:1px;
+        ">
+          MORE_PROJECTS :: IN_DEVELOPMENT
+        </h3>
+
+        <p style="
+          font-family:var(--font-mono);
+          font-size:11px;
+          margin:4px 0 0;
+          color:var(--dim);
+        ">
+          // Watch this space — new builds coming soon
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       CTA SECTION
+  ========================== -->
+
+  <section class="cta-section">
+
+```
+<div class="container">
+
+  <h2>
+    Want to Build Like This?
+  </h2>
+
+  <p>
+    Apply for an internship and join the team building
+    real-world technology projects.
+  </p>
+
+  <div class="cta-actions">
+
+    <a
+      href="internships.html"
+      class="btn"
+    >
+      $ apply --internship
+    </a>
+
+    <a
+      href="services.html"
+      class="btn-outline"
+    >
+      $ view --services
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       SOCIAL STRIP
+  ========================== -->
+
+  <div class="social-strip">
+
+```
+<p>// connect</p>
+
+<a
+  href="https://www.linkedin.com/company/abts-technologies/"
+  target="_blank"
+  rel="noopener"
+  class="social-btn"
+>
+  <img
+    src="images/linkedin.png"
+    alt="LinkedIn"
+  />
+  LinkedIn
+</a>
+
+<a
+  href="https://www.facebook.com/profile.php?id=61565416333237"
+  target="_blank"
+  rel="noopener"
+  class="social-btn"
+>
+  <img
+    src="images/facebook.png"
+    alt="Facebook"
+  />
+  Facebook
+</a>
+
+<a
+  href="https://x.com/ABTS_Tech_2024"
+  target="_blank"
+  rel="noopener"
+  class="social-btn"
+>
+  <img
+    src="images/X_logo_PNG_(2).png"
+    alt="X"
+  />
+  X_Twitter
+</a>
+```
+
+  </div>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+```
+<div class="container">
+
+  <div class="footer-brand">
+
+    <img
+      src="images/ABTSlogoshort.png"
+      alt="ABTS"
+    />
+
+    <span class="footer-brand-name">
+      ABTS Technologies
+    </span>
+
+  </div>
+
+
+  <div class="footer-socials">
+
+    <a
+      href="https://www.linkedin.com/company/abts-technologies/"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="images/linkedin.png"
+        alt="LinkedIn"
+      />
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=61565416333237"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="images/facebook.png"
+        alt="Facebook"
+      />
+    </a>
+
+    <a
+      href="https://x.com/ABTS_Tech_2024"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="images/X_logo_PNG_(2).png"
+        alt="X"
+      />
+    </a>
+
+  </div>
+
+
+  <span class="footer-copy">
+    © 2024 ABTS_TECHNOLOGIES. ALL_RIGHTS_RESERVED.
+  </span>
+
+
+  <div class="footer-links">
+
+    <a href="contact.html">
+      contact.html
+    </a>
+
+    <a href="privacy.html">
+      privacy.html
+    </a>
+
+  </div>
+
+</div>
+```
+
   </footer>
-  <script>function toggleMenu(){document.getElementById('nav-list').classList.toggle('showing');}</script>
+
+  <!-- =========================
+       MOBILE MENU SCRIPT
+  ========================== -->
+
+  <script>
+    function toggleMenu() {
+      document
+        .getElementById('nav-list')
+        .classList
+        .toggle('showing');
+    }
+  </script>
+
 </body>
 </html>
